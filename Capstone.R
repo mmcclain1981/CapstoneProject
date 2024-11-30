@@ -15,7 +15,7 @@ library(scales)
 library(caTools)
 library(randomForest)
 
-# Read the contencs of the csv file into a dataframe and explore the data
+# Read the contents of the csv file into a dataframe and explore the data
 chat <- read.csv("counsel_chat2.csv")
 summary(chat)
 questions <- data.frame(chat['questionID'],chat['questionTitle'],chat['questionText'],chat['topic'])
